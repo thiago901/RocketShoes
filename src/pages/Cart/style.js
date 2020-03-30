@@ -26,6 +26,16 @@ export const Container = styled.div`
       }
     }
   }
+  animation-name: appear;
+  animation-duration: 2s;
+  @keyframes appear {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
 `;
 export const ProductTable = styled.table`
   width: 100%;
@@ -83,5 +93,22 @@ export const Total = styled.div`
   strong {
     font-size: 28px;
     margin-left: 5px;
+  }
+`;
+
+export const CartEmpy = styled.div`
+  display: flex;
+  height: 200px;
+  justify-content: center;
+  align-items: center;
+  opacity: 0.5;
+  div {
+    text-align: center;
+
+    strong {
+      display: block;
+      margin-top: 10px;
+      font-size: 26px;
+    }
   }
 `;
